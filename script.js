@@ -53,8 +53,16 @@ function playGame() {
 
         if (result.startsWith("You win")) {
             playerScore++;
+            console.log(`Player Score: ${playerScore} - Computer Score: ${computerScore}`);
         } else if (result.startsWith("You lose")) {
             computerScore++;
+            console.log(`Player Score: ${playerScore} - Computer Score: ${computerScore}`);
+        }
+        if (round != 5) {
+                   console.log(`Round ${i + 1} complete. - on to round ${i + 2}`);
+        }
+        else {
+            console.log(`All rounds complete!`);
         }
     }
 
