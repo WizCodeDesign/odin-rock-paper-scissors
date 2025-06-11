@@ -58,7 +58,7 @@ function playGame() {
             computerScore++;
             console.log(`Player Score: ${playerScore} - Computer Score: ${computerScore}`);
         }
-        if (round != 5) {
+        if (i != 5) {
                    console.log(`Round ${i + 1} complete. - on to round ${i + 2}`);
         }
         else {
